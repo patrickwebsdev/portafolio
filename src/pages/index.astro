@@ -28,3 +28,28 @@ import ScrollTop from '../components/ScrollTop.astro';
   <Contact />
   <ScrollTop />
 </Layout>
+<script>
+  const sections = document.querySelectorAll("section");
+  const menuObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        document.querySelectorAll("nav li a").forEach((link) => {
+          const linkClass = link.classList;
+          linkClass.remove("bg-primary-2");
+          linkClass.remove("md:bg-transparent");
+          linkClass.remove("md:text-primary-1");
+        })
+        const linkHref = document.querySelector("[href='#" + entry.target.id +"']")?.classList;
+        linkHref?.add("bg-primary-2")
+        linkHref?.add("md:bg-transparent");
+        linkHref?.add("md:text-primary-1");
+      }
+    })
+  },
+  {
+    threshold: 0.2
+  });
+  sections.forEach(section => {
+    menuObserver.observe(section);
+  })
+</script>
