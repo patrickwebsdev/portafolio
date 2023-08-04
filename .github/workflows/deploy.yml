@@ -3,7 +3,7 @@ on:
     branches: [ master ]
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -23,8 +23,8 @@ jobs:
 
       - name: Build
         run: |
-          pnpm install
-          pnpm build
+          npm ci
+          npm run build
           touch dist/.nojekyll
       - name: Deploy
         # https://github.com/JamesIves/github-pages-deploy-action
