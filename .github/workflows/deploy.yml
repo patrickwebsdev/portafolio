@@ -23,8 +23,8 @@ jobs:
 
       - name: Build
         run: |
-          npm ci
-          npm run build
+          pnpm i
+          pnpm build
           touch dist/.nojekyll
       - name: Deploy
         # https://github.com/JamesIves/github-pages-deploy-action
