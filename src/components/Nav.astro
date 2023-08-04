@@ -3,7 +3,7 @@
 ---
 <nav class="bg-background-1 light:bg-white px-3 lg:px-0 fixed top-0 w-full z-50">
   <div class="container flex flex-wrap items-center justify-between mx-auto py-4">
-    <a href="https://flowbite.com/" class="flex items-center">
+    <a href="https://patrickwebs.dev" class="flex items-center">
         <img src="/patrickwebs.svg" class="h-8" alt="PatrickWebs Logo" />
     </a>
     <button data-collapse-toggle="navbar-default" type="button" id="navbar-hamburguer" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
@@ -32,18 +32,7 @@
 </nav>
 <script>
 import { Collapse, CollapseInterface, type CollapseOptions } from "flowbite";
-const options: CollapseOptions = {
-  onCollapse: () => {
-      console.log('element has been collapsed')
-  },
-  onExpand: () => {
-      console.log('element has been expanded')
-  },
-  onToggle: () => {
-      console.log('element has been toggled')
-  }
-};
 const $targetEl = document.getElementById('navbar-default');
 const $triggerEl = document.getElementById('navbar-hamburguer');
-const collapse: CollapseInterface = new Collapse($targetEl, $triggerEl, options);
+const collapse: CollapseInterface = new Collapse($targetEl, $triggerEl);
 </script>

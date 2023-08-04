@@ -18,7 +18,7 @@ const Projects = () => {
   return (
     <>
       <section className="container h-full mx-auto gap-5 min-h-screen flex flex-col lg:px-3 px-5 relative z-20 pb-80 pt-10 lg:pt-0" id="projects">
-        <h1 className="mt-24 font-black text-transparent text-3xl lg:text-5xl bg-clip-text bg-gradient-to-r from-primary-1 to-primary-2">MIS PROYECTOS</h1>
+        <h4 className="mt-24 font-black text-transparent text-3xl lg:text-5xl bg-clip-text bg-gradient-to-r from-primary-1 to-primary-2">MIS PROYECTOS</h4>
         <div className="grid lg:grid-cols-4 grid-cols-1 gap-10 lg:gap-5">
           <ProjectCard
             image="/projects/nescafe.png"
