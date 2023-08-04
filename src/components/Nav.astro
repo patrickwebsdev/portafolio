@@ -1,0 +1,49 @@
+---
+
+---
+<nav class="bg-background-1 light:bg-white px-3 lg:px-0 fixed top-0 w-full z-50">
+  <div class="container flex flex-wrap items-center justify-between mx-auto py-4">
+    <a href="https://flowbite.com/" class="flex items-center">
+        <img src="/patrickwebs.svg" class="h-8" alt="PatrickWebs Logo" />
+    </a>
+    <button data-collapse-toggle="navbar-default" type="button" id="navbar-hamburguer" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 [&>li>a]:block [&>li>a]:py-2 [&>li>a]:pl-3 [&>li>a]:pr-4 md:[&>li>a]:p-0 hover:[&>li>a]:text-primary-2">
+        <li>
+          <a href="#home" class="bg-primary-2 md:bg-transparent md:text-primary-1" aria-current="page">Inicio</a>
+        </li>
+        <li>
+          <a href="#aboutme" class="text-white">Sobre mi</a>
+        </li>
+        <li>
+          <a href="#projects" class="text-white">Proyectos</a>
+        </li>
+        <li>
+          <a href="#contact" class="text-white">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<script>
+import { Collapse, CollapseInterface, type CollapseOptions } from "flowbite";
+const options: CollapseOptions = {
+  onCollapse: () => {
+      console.log('element has been collapsed')
+  },
+  onExpand: () => {
+      console.log('element has been expanded')
+  },
+  onToggle: () => {
+      console.log('element has been toggled')
+  }
+};
+const $targetEl = document.getElementById('navbar-default');
+const $triggerEl = document.getElementById('navbar-hamburguer');
+const collapse: CollapseInterface = new Collapse($targetEl, $triggerEl, options);
+</script>
