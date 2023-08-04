@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
+      - uses: pnpm/action-setup@v2
       - uses: actions/setup-node@v2
         with:
           node-version: 20
@@ -16,8 +16,8 @@ jobs:
 
       - name: Build
         run: |
-          npm ci
-          npm run build
+          pnpm install
+          pnpm build
           touch dist/.nojekyll
       - name: Deploy
         # https://github.com/JamesIves/github-pages-deploy-action
