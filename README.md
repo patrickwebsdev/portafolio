@@ -1,54 +1,19 @@
-# Astro Starter Kit: Basics
+## 🚀 Portafolio
 
-```
-npm create astro@latest -- --template basics
-```
+![App Screenshot](https://i.imgur.com/YF1MSRU.png)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+<div align="center">
+    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+    <img src="https://img.shields.io/badge/TYPESCRIPT-3178C6?logo=typescript&logoColor=FFFFFF&style=for-the-badge" />
+    <img src="https://img.shields.io/badge/Astro-0C1222?style=for-the-badge&logo=astro&logoColor=FDFDFE" />
+    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+</div>
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:3000`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+<h2 align="left">🚀 Contacto</h2>
+<div align="left">
+    <a href="mailto:contact@patrickwebs.dev"><p>📧 contact@patrickwebs.dev</p></a>
+    <a href="https://www.linkedin.com/in/patrickwebsdev/" alt="Mi linkedin"><img src="https://img.shields.io/badge/Linkedin-0072b1?logo=linkedin&logoColor=white&style=for-the-badge"></a>
+    <a href="https://patrickwebs.dev" alt="Mi portafolio"><img src="https://img.shields.io/badge/patrickwebs.dev-00AAFF.svg?logo=data:image/png;base64,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&style=for-the-badge"></a>
+    <a href="https://discordapp.com/users/415654011887419413" alt="Mi Discord"><img src="https://img.shields.io/badge/PATRICIOALMADA-7289da?logo=discord&logoColor=FFFFFF&style=for-the-badge"></a>
+    <a href="https://github.com/patrickwebsdev" alt="Mi GitHub"><img src="https://img.shields.io/badge/patrickwebsdev-black?logo=github&logoColor=FFFFFF&style=for-the-badge"></a>
+</div>
