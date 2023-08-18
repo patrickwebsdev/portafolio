@@ -30,7 +30,7 @@ const Projects = () => {
             title="EDSU"
             description="Venta de madera mayorista y productos de madera minorista."
             technologies={["react", "nextjs", "tailwind", "typescript"]}
-            url="https://patrickwebsdev.github.io/NescafeTemplate/"
+            url="https://edsu.net/"
           />
           <ProjectCard
             image="/projects/nescafe.png"
