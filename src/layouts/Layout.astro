@@ -1,8 +1,8 @@
---- 
-import '@fontsource/twinkle-star'
-import { SEO } from 'astro-seo';
+---
+import "@fontsource/twinkle-star";
+import { SEO } from "astro-seo";
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -10,7 +10,7 @@ const { title } = Astro.props;
 
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-	<head>
+  <head>
     <SEO
       title="PatrickWebs | Patricio Almada"
       description="¡Hola! Soy Patricio Almada, desarrollador web full stack. HTML CSS JAVASCRIPT REACT JAVA TYPESCRIPT ASTRO BOOTSTRAP TAILWIND MYSQL PHP SASS NEXTJS"
@@ -18,35 +18,55 @@ const { title } = Astro.props;
         basic: {
           title: "PatrickWebs | Patricio Almada",
           type: "¡Hola! Soy Patricio Almada, desarrollador web full stack. HTML CSS JAVASCRIPT REACT JAVA TYPESCRIPT ASTRO BOOTSTRAP TAILWIND MYSQL PHP SASS NEXTJS",
-          image: "https://raw.githubusercontent.com/patrickwebsdev/patrickwebsdev/master/images/rocket.png",
-        }
+          image:
+            "https://raw.githubusercontent.com/patrickwebsdev/patrickwebsdev/master/images/rocket.png",
+        },
       }}
       twitter={{
-        creator: "@patrickwebsdev"
+        creator: "@patrickwebsdev",
       }}
       extend={{
         link: [{ rel: "icon", href: "/icon/favicon.ico" }],
         meta: [
           {
             name: "twitter:image",
-            content: "https://raw.githubusercontent.com/patrickwebsdev/patrickwebsdev/master/images/rocket.png",
+            content:
+              "https://raw.githubusercontent.com/patrickwebsdev/patrickwebsdev/master/images/rocket.png",
           },
           { name: "twitter:title", content: "PatrickWebs | Patricio Almada" },
-          { name: "twitter:description", content: "¡Hola! Soy Patricio Almada, desarrollador web full stack." },
+          {
+            name: "twitter:description",
+            content:
+              "¡Hola! Soy Patricio Almada, desarrollador web full stack.",
+          },
         ],
       }}
     />
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body class="bg-background-2">
-		<slot />
-	</body>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/favicon-512x512.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/favicon-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="keywords"
+      content="Patricio Almada, html, css, javascript, astro, typescript, bootstrap, tailwind, mysql, php, sass, nextjs, react, java"
+    />
+    <title>{title}</title>
+  </head>
+  <body class="bg-background-2">
+    <slot />
+  </body>
 </html>

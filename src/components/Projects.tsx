@@ -18,13 +18,13 @@ const Projects = () => {
   return (
     <>
       <section
-        className="container h-full mx-auto gap-5 min-h-screen flex flex-col lg:px-3 px-5 relative z-20 pb-80 pt-10 lg:pt-0"
+        className="container h-full mx-auto gap-5 min-h-screen flex flex-col md:px-12 px-5 relative z-20 pb-80 pt-10 lg:pt-0"
         id="projects"
       >
         <h4 className="mt-24 font-black text-transparent text-3xl lg:text-5xl bg-clip-text bg-gradient-to-r from-primary-1 to-primary-2">
           MIS PROYECTOS
         </h4>
-        <div className="grid lg:grid-cols-4 grid-cols-1 gap-10 lg:gap-5">
+        <div className="grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 lg:gap-5">
           <ProjectCard
             image="/projects/edsu.png"
             title="EDSU"
@@ -32,13 +32,13 @@ const Projects = () => {
             technologies={["react", "nextjs", "tailwind", "typescript"]}
             url="https://edsu.net/"
           />
-          <ProjectCard
+          {/* <ProjectCard
             image="/projects/nescafe.png"
             title="Nescafe Gold"
             description="Creacion de una plantilla para Nescafe GOLD."
             technologies={["html", "css", "javascript", "sass"]}
             url="https://patrickwebsdev.github.io/NescafeTemplate/"
-          />
+          /> */}
           <ProjectCard
             image="/projects/visitorchat.png"
             title="Template"
