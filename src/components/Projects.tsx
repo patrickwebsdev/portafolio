@@ -28,7 +28,7 @@ const Projects = () => {
           <ProjectCard
             image="/projects/edsu.png"
             title="EDSU"
-            description="Venta de madera mayorista y productos de madera minorista."
+            description="Venta de madera mayorista y productos de madera minorista"
             technologies={["react", "nextjs", "tailwind", "typescript"]}
             url="https://edsu.net/"
           />
@@ -56,7 +56,7 @@ const Projects = () => {
           <ProjectCard
             image="/projects/ride-4-clon.png"
             title="Ride 4 Clon"
-            description="Clon de la pagina del juego Ride 4 de motocicletas"
+            description="Clon de la página del juego Ride 4 de motocicletas"
             technologies={["html", "css", "javascript", "sass"]}
             url="https://patrickwebsdev.github.io/ride-4-clon/"
           />
