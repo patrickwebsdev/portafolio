@@ -30,7 +30,7 @@ const Projects = () => {
             title="EDSU"
             description="Venta de madera mayorista y productos de madera minorista"
             technologies={["react", "nextjs", "tailwind", "typescript"]}
-            url="https://edsu.net/"
+            url="https://edsu.vercel.app/"
           />
           {/* <ProjectCard
             image="/projects/nescafe.png"
