@@ -9,7 +9,11 @@ type Technologies =
   | "typescript"
   | "php"
   | "tailwind"
-  | "bootstrap";
+  | "bootstrap"
+  | "hotjar"
+  | "serpapi"
+  | "contentful"
+  | "googlemaps";
 
 type CardProps = {
   image: string;

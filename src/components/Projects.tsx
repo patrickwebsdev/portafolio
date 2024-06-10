@@ -12,6 +12,7 @@ const technologies = [
   "php",
   "tailwind",
   "bootstrap",
+  "hotjar",
 ];
 
 const Projects = () => {
@@ -25,6 +26,22 @@ const Projects = () => {
           MIS PROYECTOS
         </h4>
         <div className="grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 lg:gap-5">
+          <ProjectCard
+            image="/projects/miwa.png"
+            title="MIWA"
+            description="Poda y servicios forestales"
+            technologies={[
+              "react",
+              "nextjs",
+              "tailwind",
+              "typescript",
+              "hotjar",
+              "serpapi",
+              "contentful",
+              "googlemaps",
+            ]}
+            url="https://miwa.com.ar/"
+          />
           <ProjectCard
             image="/projects/edsu.png"
             title="EDSU"
