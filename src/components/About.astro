@@ -1,31 +1,44 @@
 ---
 ---
 
-<section
-  class="container grid lg:grid-cols-2 grid-cols-1 gap-y-20 lg:gap-y-0 lg:h-screen mx-auto md:px-12 px-5 py-36 lg:py-0 relative z-10"
-  id="aboutme"
->
-  <div
-    class="flex flex-col gap-y-4 h-full justify-center text-center lg:text-left"
-  >
-    <h4
-      class="font-black text-transparent text-3xl lg:text-5xl bg-clip-text bg-gradient-to-r from-primary-1 to-primary-2"
-    >
-      SOBRE MÍ
-    </h4>
-    <p class="text-white font-medium text-md lg:text-xl">
-      💻 Soy una persona que asimila muy rápido nuevo conocimiento, muy creativa
-      y que le gusta innovar.
-    </p>
-    <p class="text-white font-medium text-md lg:text-xl">
-      ⭐ Soy capaz de concentrarme en los detalles y de comprometerme con el
-      esfuerzo necesario para alcanzar mis objetivos.
-    </p>
-    <p class="text-white font-medium text-md lg:text-xl">
-      📌 Me gustan las motos y el café.
-    </p>
-  </div>
-  <div class="flex justify-center items-center h-full">
-    <img class="h-60 lg:h-96" src="/profile.png" alt="Imagen de perfil" />
-  </div>
+<section class="container flex items-center lg:h-screen mx-auto md:px-12 px-5 py-36 lg:py-0 relative z-10" id="aboutme">
+	<div class="grid lg:grid-cols-2 grid-cols-1 gap-y-20 gap-x-20 lg:gap-y-0">
+		<div class="flex flex-col gap-y-4 h-full justify-center text-left lg:text-left">
+			<h4
+				class="font-black text-transparent text-3xl lg:text-5xl bg-clip-text bg-gradient-to-r from-primary-1 to-primary-2 w-fit">
+				SOBRE MÍ
+			</h4>
+			<p class="text-white font-medium text-md lg:text-xl">
+				💻 Soy una persona que asimila muy rápido nuevo conocimiento, muy creativa
+				y que le gusta innovar.
+			</p>
+			<p class="text-white font-medium text-md lg:text-xl">
+				📖 Actualmente me encuentro profundizando conocimientos en el framework Laravel y patrones MVC.
+			</p>
+			<p class="text-white font-medium text-md lg:text-xl">
+				⭐ Me gustan las motos y el café.
+			</p>
+		</div>
+		<div class="flex flex-col gap-y-4 h-full justify-start items-start md:items-end lg:text-right">
+			<h4
+				class="font-black text-transparent text-3xl lg:text-5xl bg-clip-text bg-gradient-to-r from-primary-1 to-primary-2 w-fit">
+				SKILLS
+			</h4>
+			<img
+				srcset="https://skillicons.dev/icons?i=js,typescript,nodejs,react,nextjs,git,github,githubactions,vercel,linux,docker,vim,vscode,php,mysql,laravel,sass,tailwind,bootstrap,figma&perline=5 480w, https://skillicons.dev/icons?i=js,typescript,nodejs,react,nextjs,git,github,githubactions,vercel,linux,docker,vim,vscode,php,mysql,laravel,sass,tailwind,bootstrap,figma&perline=10 800w"
+				src="https://skillicons.dev/icons?i=js,typescript,nodejs,react,nextjs,git,github,githubactions,vercel,linux,docker,vim,vscode,php,mysql,laravel,sass,tailwind,bootstrap,figma&perline=10"
+				sizes="(max-width: 600px) 480px,
+		800px" class="w-full">
+		</div>
+	</div>
+	<div class="w-full justify-center items-center absolute bottom-12 left-0 hidden lg:flex">
+		<a href="#contact" aria-label="Ir a seccion sobre mí"
+			class="animate-bounce py-1 px-1 text-white bg-primary-3 hover:bg-primary-2 transition-all duration-300 items-center border-primary-2 border-2 rounded-full">
+			<svg width="48" height="48" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+				<path fill="#ffffff"
+					d="m12 19.164l6.207-6.207l-1.414-1.414L12 16.336l-4.793-4.793l-1.414 1.414L12 19.164Zm0-5.65l6.207-6.207l-1.414-1.414L12 10.686L7.207 5.893L5.793 7.307L12 13.514Z">
+				</path>
+			</svg>
+		</a>
+	</div>
 </section>

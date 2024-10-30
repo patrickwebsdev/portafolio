@@ -1,17 +1,30 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Nav from "../components/Nav.astro";
 import Hero from "../components/Hero.astro";
 import About from "../components/About.astro";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact.astro";
 import Separator from "../components/Separator.astro";
 import ScrollTop from "../components/ScrollTop.astro";
+import Footer from "../components/Footer.astro";
+
 ---
 
 <Layout title="PatrickWebs | Patricio Almada">
-  <Nav />
   <Hero />
+  <Separator>
+    <svg
+      class="fill-primary-2 flex-shrink mx-4"
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      viewBox="0 0 20 20"
+      ><path
+        d="M4 16v-2H2v2H1v-5h1v2h2v-2h1v5H4zm3 0v-4H5.6v-1h3.7v1H8v4H7zm3 0v-5h1l1.4 3.4h.1L14 11h1v5h-1v-3.1h-.1l-1.1 2.5h-.6l-1.1-2.5H11V16h-1zm9 0h-3v-5h1v4h2v1zM9.4 4.2 7.1 6.5l2.3 2.3-.6 1.2-3.5-3.5L8.8 3l.6 1.2zm1.2 4.6 2.3-2.3-2.3-2.3.6-1.2 3.5 3.5-3.5 3.5-.6-1.2z"
+      ></path></svg
+    >
+  </Separator>
+  <Projects client:load />
   <Separator>
     <svg
       class="fill-primary-2 flex-shrink mx-4"
@@ -27,19 +40,6 @@ import ScrollTop from "../components/ScrollTop.astro";
   <About />
   <Separator>
     <svg
-      class="fill-primary-2 flex-shrink mx-4"
-      xmlns="http://www.w3.org/2000/svg"
-      width="32"
-      height="32"
-      viewBox="0 0 20 20"
-      ><path
-        d="M4 16v-2H2v2H1v-5h1v2h2v-2h1v5H4zm3 0v-4H5.6v-1h3.7v1H8v4H7zm3 0v-5h1l1.4 3.4h.1L14 11h1v5h-1v-3.1h-.1l-1.1 2.5h-.6l-1.1-2.5H11V16h-1zm9 0h-3v-5h1v4h2v1zM9.4 4.2 7.1 6.5l2.3 2.3-.6 1.2-3.5-3.5L8.8 3l.6 1.2zm1.2 4.6 2.3-2.3-2.3-2.3.6-1.2 3.5 3.5-3.5 3.5-.6-1.2z"
-      ></path></svg
-    >
-  </Separator>
-  <Projects />
-  <Separator>
-    <svg
       class="stroke-primary-2 flex-shrink mx-4"
       xmlns="http://www.w3.org/2000/svg"
       width="32"
@@ -53,6 +53,20 @@ import ScrollTop from "../components/ScrollTop.astro";
     >
   </Separator>
   <Contact />
+  <Separator>
+		<svg xmlns="http://www.w3.org/2000/svg" class="fill-primary-2 flex-shrink mx-4" width="32" height="32" viewBox="0 0 1007.000000 1280.000000" preserveAspectRatio="xMidYMid meet">
+
+			<g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" class="fill-primary-2" fill="currentCOlor" stroke="none">
+			<path d="M8402 12785 c-663 -101 -1218 -595 -1405 -1250 -52 -182 -61 -256 -61 -475 0 -227 14 -320 75 -502 144 -431 481 -773 899 -912 184 -61 251 -71 475 -71 221 1 322 16 500 77 963 325 1459 1457 1025 2343 -69 142 -141 245 -250 358 -206 216 -457 356 -748 417 -129 28 -381 35 -510 15z"/>
+			<path d="M3525 12592 c-156 -47 -299 -158 -398 -310 -89 -136 -125 -263 -134 -468 -16 -390 121 -727 362 -891 231 -156 477 -184 681 -78 77 41 101 58 182 138 108 106 178 231 218 388 24 99 30 343 11 465 -61 386 -244 628 -555 737 -112 40 -270 48 -367 19z"/>
+			<path d="M5520 12590 c-138 -16 -256 -76 -371 -190 -208 -205 -333 -518 -332 -830 1 -149 22 -241 83 -358 101 -194 269 -332 485 -398 80 -25 105 -28 235 -28 125 0 154 3 210 23 95 33 164 76 242 149 93 88 158 177 217 297 91 186 120 302 128 505 4 135 2 166 -15 237 -98 388 -470 638 -882 593z"/>
+			<path d="M1835 11855 c-150 -28 -271 -91 -375 -195 -113 -113 -167 -218 -191 -369 -20 -129 21 -332 97 -483 78 -156 218 -322 339 -402 234 -156 563 -146 808 22 74 51 172 165 211 244 51 102 66 167 66 283 0 210 -81 419 -240 619 -185 234 -439 333 -715 281z"/>
+			<path d="M403 10645 c-85 -23 -173 -73 -233 -134 -67 -66 -103 -125 -138 -224 -22 -63 -25 -89 -26 -202 0 -150 13 -212 75 -343 217 -465 762 -632 1063 -327 62 63 117 162 142 255 21 79 23 240 5 325 -81 375 -413 667 -755 664 -45 0 -105 -7 -133 -14z"/>
+			<path d="M4230 10524 c-577 -43 -992 -145 -1505 -371 -549 -243 -933 -490 -1245 -803 -327 -327 -543 -688 -711 -1192 -122 -364 -241 -936 -291 -1393 -17 -160 -17 -895 0 -1105 43 -513 106 -977 193 -1415 295 -1479 797 -2688 1416 -3406 281 -326 596 -555 918 -669 155 -54 407 -108 685 -147 177 -24 563 -24 718 0 461 72 787 264 975 574 153 252 181 604 73 934 -78 240 -251 597 -465 964 -530 906 -658 1159 -736 1463 -65 248 -49 612 37 872 220 668 953 1130 1993 1255 238 29 388 70 553 152 263 129 468 337 607 613 211 420 257 967 129 1537 -54 241 -126 442 -240 673 -251 505 -605 873 -1047 1089 -383 187 -783 298 -1287 356 -130 16 -646 28 -770 19z"/>
+			</g>
+			</svg>
+	</Separator>
+	<Footer />
   <ScrollTop />
 </Layout>
 <script>
@@ -73,6 +87,17 @@ import ScrollTop from "../components/ScrollTop.astro";
           linkHref?.add("bg-primary-2");
           linkHref?.add("md:bg-transparent");
           linkHref?.add("md:text-primary-1");
+					const scrollTop = document.getElementById("scrollTop");
+					if(
+						entry.target.id == "projects" && scrollTop != null ||
+						entry.target.id == "aboutme" && scrollTop != null ||
+						entry.target.id == "contact" && scrollTop != null
+					){
+						scrollTop.style.display = "flex";
+					}
+					else if(scrollTop != null) {
+						scrollTop.style.display = "none";
+					}
         }
       });
     },
@@ -84,4 +109,3 @@ import ScrollTop from "../components/ScrollTop.astro";
     menuObserver.observe(section);
   });
 </script>
-<script src="woopra.js" async></script>

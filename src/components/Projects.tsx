@@ -13,6 +13,7 @@ const technologies = [
   "tailwind",
   "bootstrap",
   "hotjar",
+	"contentful",
 ];
 
 const Projects = () => {
@@ -22,77 +23,92 @@ const Projects = () => {
         className="container h-full mx-auto gap-4 min-h-screen flex flex-col md:px-12 px-5 relative z-20 pb-80 pt-10 lg:pt-0"
         id="projects"
       >
-        <h4 className="mt-24 font-black text-transparent text-3xl lg:text-5xl bg-clip-text bg-gradient-to-r from-primary-1 to-primary-2">
+        <h4 className="mt-24 mb-4 font-black text-transparent text-3xl lg:text-5xl bg-clip-text bg-gradient-to-r from-primary-1 to-primary-2 w-fit">
           MIS PROYECTOS
         </h4>
-        <div className="grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 lg:gap-5">
+        <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-10 lg:gap-5">
           <ProjectCard
-            image="/projects/miwa.png"
+						video="/projects/project.mp4"
+            image="/projects/project"
+            title="Tu sitio web"
+            description="Contáctame y obtén tu propio sitio web"
+            technologies={[]}
+            url="#contact"
+          />
+          <ProjectCard
+						video="/projects/miwa.mp4"
+            image="/projects/miwa"
             title="MIWA"
             description="Poda y servicios forestales"
             technologies={[
-              "react",
               "nextjs",
               "tailwind",
               "typescript",
-              "hotjar",
-              "serpapi",
-              "contentful",
-              "googlemaps",
+							"contentful"
             ]}
             url="https://miwa.com.ar/"
+						urlGit="https://github.com/patrickwebsdev/miwa/"
           />
           <ProjectCard
-            image="/projects/edsu.png"
+						video="/projects/edsu.mp4"
+            image="/projects/edsu"
             title="EDSU"
             description="Venta de madera mayorista y productos de madera minorista"
             technologies={["react", "nextjs", "tailwind", "typescript"]}
-            url="https://edsu.vercel.app/"
-          />
-          {/* <ProjectCard
-            image="/projects/nescafe.png"
-            title="Nescafe Gold"
-            description="Creacion de una plantilla para Nescafe GOLD."
-            technologies={["html", "css", "javascript", "sass"]}
-            url="https://patrickwebsdev.github.io/NescafeTemplate/"
-          /> */}
-          <ProjectCard
-            image="/projects/visitorchat.png"
-            title="Template"
-            description="Plantilla sobre ChatBots con IA"
-            technologies={["html", "css", "javascript", "sass"]}
-            url="https://patrickwebsdev.github.io/visitorchat/"
+            url="https://edsu.net/"
+						urlGit="https://github.com/patrickwebsdev/edsu/"
           />
           <ProjectCard
-            image="/projects/encriptador-oracle-next-education.png"
-            title="Encriptador"
-            description="Desafío de ONE (Oracle Next Education)"
-            technologies={["html", "css", "javascript", "sass"]}
-            url="https://patrickwebsdev.github.io/Encriptador-Oracle-Alura/"
-          />
-          <ProjectCard
-            image="/projects/ride-4-clon.png"
+						video="/projects/ride-4-clon.mp4"
+            image="/projects/ride-4-clon"
             title="Ride 4 Clon"
             description="Clon de la página del juego Ride 4 de motocicletas"
             technologies={["html", "css", "javascript", "sass"]}
             url="https://patrickwebsdev.github.io/ride-4-clon/"
+						urlGit="https://github.com/patrickwebsdev/ride-4-clon/"
           />
           <ProjectCard
-            image="/projects/box-shadow-generator.png"
+						video="/projects/box-shadow-generator.mp4"
+            image="/projects/box-shadow-generator"
             title="Box shadow generator"
             description="Generador de sombras con interfaz personalizable (fondo del sitio, fondo de contenedor y color de sombra)"
             technologies={["html", "css", "javascript", "sass"]}
             url="https://patrickwebsdev.github.io/shadow-generator/"
+						urlGit="https://github.com/patrickwebsdev/shadow-generator/"
           />
           <ProjectCard
-            image="/projects/biginfluence-template.png"
+						video="/projects/biginfluence-template.mp4"
+            image="/projects/biginfluence-template"
             title="BigInfluence Template"
             description="Plantilla para servicios de influencers"
             technologies={["html", "css", "javascript", "sass"]}
             url="https://patrickwebsdev.github.io/biginfluence/"
+						urlGit="https://github.com/patrickwebsdev/biginfluence/"
           />
         </div>
+  <div
+    className="w-full justify-center items-center absolute bottom-12 left-0 hidden lg:flex"
+  >
+    <a
+      href="#aboutme"
+      aria-label="Ir a seccion sobre mí"
+      className="animate-bounce py-1 px-1 text-white bg-primary-3 hover:bg-primary-2 transition-all duration-300 items-center border-primary-2 border-2 rounded-full"
+    >
+      <svg
+        width="48"
+        height="48"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill="#ffffff"
+          d="m12 19.164l6.207-6.207l-1.414-1.414L12 16.336l-4.793-4.793l-1.414 1.414L12 19.164Zm0-5.65l6.207-6.207l-1.414-1.414L12 10.686L7.207 5.893L5.793 7.307L12 13.514Z"
+        ></path>
+      </svg>
+    </a>
+  </div>
       </section>
+
       {technologies.map((tech) => (
         <div
           key={tech}
