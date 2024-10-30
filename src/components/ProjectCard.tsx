@@ -58,12 +58,12 @@ const ProjectCard = ({
 				<div className="relative w-full overflow-hidden">
 					<video
 						ref={videoRef}
-						preload="none"
 						loop
 						muted
 						className="z-[1] absolute top-0 left-0 w-full h-full object-cover"
+						data-src={video}
 					>
-						<source src={video} type="video/mp4" />
+						<source data-src={video} type="video/mp4" />
 					</video>
 					<picture className="z-[2] relative rounded-t-lg w-full transition-all duration-300 group-hover/card:scale-125 opacity-100 group-hover/card:opacity-0">
 						<source srcSet={image + ".webp"} type="image/webp" />

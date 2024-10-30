@@ -108,4 +108,19 @@ import Footer from "../components/Footer.astro";
   sections.forEach((section) => {
     menuObserver.observe(section);
   });
+	document.addEventListener("DOMContentLoaded", function() {
+  const videos = document.querySelectorAll("video[data-src]");
+  
+  videos.forEach(videoElement => {
+    const video = videoElement as HTMLVideoElement;
+    const source = video.querySelector("source[data-src]") as HTMLSourceElement;
+    video.src = video.getAttribute("data-src") || "";
+    if (source) {
+      source.src = source.getAttribute("data-src") || "";
+    }
+    video.removeAttribute("data-src");
+    if (source) source.removeAttribute("data-src");
+  });
+});
+
 </script>
