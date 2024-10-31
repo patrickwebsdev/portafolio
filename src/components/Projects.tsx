@@ -20,10 +20,10 @@ const Projects = () => {
   return (
     <>
       <section
-        className="container h-full mx-auto gap-4 min-h-screen flex flex-col md:px-12 px-5 relative z-20 pb-80 pt-10 lg:pt-0"
+        className="container h-full mx-auto gap-4 lg:min-h-screen flex flex-col md:px-12 px-5 relative z-20 pb-10 md:pb-40 pt-10 md:pt-24"
         id="projects"
       >
-        <h4 className="mt-24 mb-4 font-black text-transparent text-3xl lg:text-5xl bg-clip-text bg-gradient-to-r from-primary-1 to-primary-2 w-fit">
+        <h4 className="mb-4 font-black text-transparent text-3xl lg:text-5xl bg-clip-text bg-gradient-to-r from-primary-1 to-primary-2 w-fit">
           MIS PROYECTOS
         </h4>
         <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-10 lg:gap-5">

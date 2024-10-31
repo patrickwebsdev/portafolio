@@ -2,9 +2,9 @@
 
 ---
 <section
-	class="container flex items-center lg:h-[90vh] mx-auto md:px-12 px-5 py-36 lg:py-0 relative z-10"
+	class="container flex items-center h-full lg:h-min-[90vh] mx-auto md:px-12 px-5 pt-10 md:pt-24 pb-10 md:pb-24 relative z-10"
 	id="contact">
-	<div class="grid lg:grid-cols-2 grid-cols-1 gap-y-20 gap-x-20 lg:gap-y-0 w-full">
+	<div class="grid lg:grid-cols-2 grid-cols-1 gap-y-10 lg:gap-y-20 gap-x-10 xl:gap-x-20 w-full">
 	<div class="flex flex-col gap-y-4 h-full justify-start text-left">
 		<h1
 			class="font-black text-transparent text-3xl lg:text-4xl mb-4 mt-6 bg-clip-text bg-gradient-to-r from-primary-1 to-primary-2 w-fit">
@@ -37,7 +37,7 @@
 			</a>
 		</div>
 
-		<div class="flex justify-center items-center h-full">
+		<div class="hidden justify-center items-center h-full lg:flex">
 			<div class="group/card bg-primary-5 ring-primary-6 hover:ring-primary-7 hover:bg-primary-3 ring-2 rounded-lg shadow transition-all duration-300 grid p-2 w-full divide-y-[1px] divide-white divide-opacity-30 group-hover/card:divide-opacity-70 gap-2">
 				<div class="flex justify-between items-center relative">
 					<div class="flex gap-1">
@@ -65,7 +65,7 @@
 	<form method="POST" id="form"
 		class="flex w-full flex-col gap-5 text-white font-medium text-lg justify-center items-center h-full">
 		<input type="hidden" name="access_key" value="57530b87-c13e-4a65-b230-e3b93eb72ded">
-		<div class="grid md:grid-cols-2 md:gap-6 w-full">
+		<div class="grid md:grid-cols-2 md:gap-6 w-full gap-y-5 lg:gap-y-0">
 			<div class="relative z-0 w-full group gap-2 flex flex-col">
 				<label for="name">Nombre <span class="text-rose-400">*</span></label>
 				<input type="text" autocomplete="off" name="name" id="name"
