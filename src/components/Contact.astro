@@ -63,42 +63,42 @@
 			ENVIAME UN MENSAJE
 		</h1>
 	<form method="POST" id="form"
-		class="flex w-full flex-col gap-5 text-white font-medium text-lg justify-center items-center h-full">
+		class="flex w-full flex-col gap-5 text-white font-medium text-md md:text-lg justify-center items-center h-full">
 		<input type="hidden" name="access_key" value="57530b87-c13e-4a65-b230-e3b93eb72ded">
 		<div class="grid md:grid-cols-2 md:gap-6 w-full gap-y-5 lg:gap-y-0">
 			<div class="relative z-0 w-full group gap-2 flex flex-col">
 				<label for="name">Nombre <span class="text-rose-400">*</span></label>
 				<input type="text" autocomplete="off" name="name" id="name"
-					class="block w-full rounded-xl bg-primary-5 ring-primary-6 hover:ring-primary-7 hover:bg-primary-3 focus:ring-primary-7 focus:bg-primary-3 ring-2 border-0 py-3 px-5 text-lg"
+					class="block w-full rounded-xl bg-primary-5 ring-primary-6 hover:ring-primary-7 hover:bg-primary-3 focus:ring-primary-7 focus:bg-primary-3 ring-2 border-0 py-2 md:py-3 px-4 md:px-5 text-md md:text-lg"
 					placeholder="Tu nombre (obligatorio)" required />
 			</div>
 			<div class="relative z-0 w-full group gap-2 flex flex-col">
 				<label for="last_name">Apellido <span class="text-rose-400">*</span></label>
 				<input type="text" autocomplete="off" name="last_name" id="last_name"
-					class="block w-full rounded-xl bg-primary-5 ring-primary-6 hover:ring-primary-7 hover:bg-primary-3 focus:ring-primary-7 focus:bg-primary-3 ring-2 border-0 py-3 px-5 text-lg"
+					class="block w-full rounded-xl bg-primary-5 ring-primary-6 hover:ring-primary-7 hover:bg-primary-3 focus:ring-primary-7 focus:bg-primary-3 ring-2 border-0 py-2 md:py-3 px-4 md:px-5 text-md md:text-lg"
 					placeholder="Tu apellido (obligatorio)" required />
 			</div>
 		</div>
 		<div class="relative z-0 w-full group gap-2 flex flex-col">
 			<label for="email">E-mail <span class="text-rose-400">*</span></label>
 			<input type="email" autocomplete="off" name="email" id="email"
-			class="block w-full rounded-xl bg-primary-5 ring-primary-6 hover:ring-primary-7 hover:bg-primary-3 focus:ring-primary-7 focus:bg-primary-3 ring-2 border-0 py-3 px-5 text-lg"
+			class="block w-full rounded-xl bg-primary-5 ring-primary-6 hover:ring-primary-7 hover:bg-primary-3 focus:ring-primary-7 focus:bg-primary-3 ring-2 border-0 py-2 md:py-3 px-4 md:px-5 text-md md:text-lg"
 			placeholder="Tu correo electronico (obligatorio)" required />
 		</div>
 		<div class="relative z-0 w-full group gap-2 flex flex-col">
 			<label for="phone">Número celular</label>
 			<input type="tel" autocomplete="off" name="phone" id="phone"
-				class="block w-full rounded-xl bg-primary-5 ring-primary-6 hover:ring-primary-7 hover:bg-primary-3 focus:ring-primary-7 focus:bg-primary-3 ring-2 border-0 py-3 px-5 text-lg"
+				class="block w-full rounded-xl bg-primary-5 ring-primary-6 hover:ring-primary-7 hover:bg-primary-3 focus:ring-primary-7 focus:bg-primary-3 ring-2 border-0 py-2 md:py-3 px-4 md:px-5 text-md md:text-lg"
 				placeholder="Tu número celular (No obligatorio)" required />
 		</div>
 		<div class="relative w-full group gap-2 flex flex-col">
 			<label for="message">Mensaje <span class="text-rose-400">*</span></label>
 			<textarea autocomplete="off" name="message" id="message" rows="5" 
-				class="block w-full rounded-xl bg-primary-5 ring-primary-6 hover:ring-primary-7 hover:bg-primary-3 focus:ring-primary-7 focus:bg-primary-3 ring-2 border-0 py-3 px-5 text-lg"
+				class="block w-full rounded-xl bg-primary-5 ring-primary-6 hover:ring-primary-7 hover:bg-primary-3 focus:ring-primary-7 focus:bg-primary-3 ring-2 border-0 py-2 md:py-3 px-4 md:px-5 text-md md:text-lg"
 				placeholder="Tu mensaje o consulta (obligatorio)" required></textarea>
 		</div>
 		<button type="submit" aria-label="Enviar mensaje"
-			class="flex w-full text-center justify-center gap-2 h-14 font-semibold py-3 px-5 text-white bg-primary-3 hover:bg-primary-2 transition-all duration-300 items-center border-primary-2 border-2 rounded-full" id="result">
+			class="flex w-full text-center justify-center gap-2 h-14 font-semibold py-2 md:py-3 px-4 md:px-5 text-white bg-primary-3 hover:bg-primary-2 transition-all duration-300 items-center border-primary-2 border-2 rounded-full" id="result">
 			Enviar mensaje
 			<svg width="18" height="18" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
 				<path fill="#FFFFFF"

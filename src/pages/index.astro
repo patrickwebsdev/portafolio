@@ -67,7 +67,6 @@ import Footer from "../components/Footer.astro";
 			</svg>
 	</Separator>
 	<Footer />
-  <ScrollTop />
 </Layout>
 <script>
   const sections = document.querySelectorAll("section");
@@ -108,9 +107,8 @@ import Footer from "../components/Footer.astro";
   sections.forEach((section) => {
     menuObserver.observe(section);
   });
-	document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
   const videos = document.querySelectorAll("video[data-src]");
-  
   videos.forEach(videoElement => {
     const video = videoElement as HTMLVideoElement;
     const source = video.querySelector("source[data-src]") as HTMLSourceElement;
@@ -120,6 +118,7 @@ import Footer from "../components/Footer.astro";
     }
     video.removeAttribute("data-src");
     if (source) source.removeAttribute("data-src");
+    video.load();
   });
 });
 

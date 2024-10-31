@@ -4,5 +4,30 @@ const year = new Date().getFullYear()
 
 <footer class="container flex items-center h-full lg:min-h-[10vh] mx-auto md:px-12 px-5 pt-10 pb-10 relative z-10 w-full flex-row justify-between">
 	<p class="text-white opacity-70 text-base font-semibold">Copyright © {year}</p>
+<button
+  type="button"
+  data-te-ripple-init
+  data-te-ripple-color="light"
+  class="relative md:!fixed z-30 md:bottom-5 md:right-5 hidden rounded-full bg-primary-2 p-3 text-md font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-7 hover:shadow-lg focus:bg-primary-2 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-3 active:shadow-lg"
+  id="scrollTop">
+  <svg
+    aria-hidden="true"
+    focusable="false"
+    data-prefix="fas"
+    class="h-5 w-5 md:h-8 md:w-8"
+    role="img"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 448 512">
+    <path
+      fill="currentColor"
+      d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path>
+  </svg>
+</button>
 	<p class="text-white opacity-70 text-base font-semibold">Hecho con ❤️ y ☕</p>
 </footer>
+
+<script>
+  document.getElementById("scrollTop")?.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  })
+</script>
