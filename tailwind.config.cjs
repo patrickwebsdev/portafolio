@@ -12,7 +12,8 @@ module.exports = {
         2: 'linear-gradient(0deg, rgba(22,22,23,1) 23%, rgba(42,57,94,1) 73%, rgba(22,22,23,1) 100%)',
         3: '#16161730',
         4: '#16161750',
-        5: '#c4a7e70d'
+        5: '#c4a7e70d',
+				6: 'rgba(22,22,23,1)'
       },
 			'image': 'linear-gradient(0deg, rgba(22,22,23,1) 23%, rgba(42,57,94,1) 73%, rgba(22,22,23,1) 100%)',
       'primary': {
