@@ -113,7 +113,15 @@
     </a>
   </div>
 </section>
-<img src="/profile.png" id="profile-image" class="absolute hidden w-[15vw]">
+<picture>
+	<source src-set="profile.webp" type="image/webp" />
+	<source src-set="profile.png" type="image/png" />
+	<img
+		src="profile.webp"
+		alt="profile photo"
+		id="profile-image" class="absolute hidden w-[15vw]" aria-hidden="true" loading="lazy"
+	/>
+</picture>
 <script is:inline>
 	const profileLink = document.getElementById("profile-photo");
 	const profileImage = document.getElementById("profile-image");

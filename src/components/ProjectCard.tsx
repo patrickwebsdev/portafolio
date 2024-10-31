@@ -72,6 +72,8 @@ const ProjectCard = ({
 							className="z-[2] relative rounded-t-lg w-full transition-all duration-300 group-hover/card:scale-125 opacity-100 group-hover/card:opacity-0"
 							src={image + ".webp"}
 							alt={title + " - " + description}
+							width="1"
+							height="1"
 						/>
 					</picture>
 				</div>
