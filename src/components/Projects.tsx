@@ -13,7 +13,7 @@ const technologies = [
   "tailwind",
   "bootstrap",
   "hotjar",
-	"contentful",
+  "contentful",
 ];
 
 const Projects = () => {
@@ -28,85 +28,78 @@ const Projects = () => {
         </h4>
         <div className="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-10 lg:gap-5">
           <ProjectCard
-						video="/projects/project.mp4"
-            image="/projects/project"
+            video="projects/project.mp4"
+            image="projects/project"
             title="Tu sitio web"
             description="Contáctame y obtén tu propio sitio web"
             technologies={[]}
             url="#contact"
           />
           <ProjectCard
-						video="/projects/miwa.mp4"
-            image="/projects/miwa"
+            video="projects/miwa.mp4"
+            image="projects/miwa"
             title="MIWA"
             description="Poda y servicios forestales"
-            technologies={[
-              "nextjs",
-              "tailwind",
-              "typescript",
-							"contentful"
-            ]}
+            technologies={["nextjs", "tailwind", "typescript", "contentful"]}
             url="https://miwa.com.ar/"
-						urlGit="https://github.com/patrickwebsdev/miwa/"
+            urlGit="https://github.com/patrickwebsdev/miwa/"
           />
           <ProjectCard
-						video="/projects/edsu.mp4"
-            image="/projects/edsu"
+            video="projects/edsu.mp4"
+            image="projects/edsu"
             title="EDSU"
             description="Venta de madera mayorista y productos de madera minorista"
             technologies={["react", "nextjs", "tailwind", "typescript"]}
             url="https://edsu.net/"
-						urlGit="https://github.com/patrickwebsdev/edsu/"
+            urlGit="https://github.com/patrickwebsdev/edsu/"
           />
           <ProjectCard
-						video="/projects/ride-4-clon.mp4"
-            image="/projects/ride-4-clon"
+            video="projects/ride-4-clon.mp4"
+            image="projects/ride-4-clon"
             title="Ride 4 Clon"
             description="Clon de la página del juego Ride 4 de motocicletas"
             technologies={["html", "css", "javascript", "sass"]}
             url="https://patrickwebsdev.github.io/ride-4-clon/"
-						urlGit="https://github.com/patrickwebsdev/ride-4-clon/"
+            urlGit="https://github.com/patrickwebsdev/ride-4-clon/"
           />
           <ProjectCard
-						video="/projects/box-shadow-generator.mp4"
-            image="/projects/box-shadow-generator"
+            video="projects/box-shadow-generator.mp4"
+            image="projects/box-shadow-generator"
             title="Box shadow generator"
             description="Generador de sombras con interfaz personalizable (fondo del sitio, fondo de contenedor y color de sombra)"
             technologies={["html", "css", "javascript", "sass"]}
             url="https://patrickwebsdev.github.io/shadow-generator/"
-						urlGit="https://github.com/patrickwebsdev/shadow-generator/"
+            urlGit="https://github.com/patrickwebsdev/shadow-generator/"
           />
           <ProjectCard
-						video="/projects/biginfluence-template.mp4"
-            image="/projects/biginfluence-template"
+            video="projects/biginfluence-template.mp4"
+            image="projects/biginfluence-template"
             title="BigInfluence Template"
             description="Plantilla para servicios de influencers"
             technologies={["html", "css", "javascript", "sass"]}
             url="https://patrickwebsdev.github.io/biginfluence/"
-						urlGit="https://github.com/patrickwebsdev/biginfluence/"
+            urlGit="https://github.com/patrickwebsdev/biginfluence/"
           />
         </div>
-  <div
-    className="w-full justify-center items-center absolute bottom-12 left-0 hidden lg:flex"
-  >
-    <a
-      href="#aboutme"
-      aria-label="Ir a seccion sobre mí"
-      className="animate-bounce py-1 px-1 text-white bg-primary-3 hover:bg-primary-2 transition-all duration-300 items-center border-primary-2 border-2 rounded-full"
-    >
-      <svg
-        width="48"
-        height="48"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          fill="#ffffff"
-          d="m12 19.164l6.207-6.207l-1.414-1.414L12 16.336l-4.793-4.793l-1.414 1.414L12 19.164Zm0-5.65l6.207-6.207l-1.414-1.414L12 10.686L7.207 5.893L5.793 7.307L12 13.514Z"
-        ></path>
-      </svg>
-    </a>
-  </div>
+        <div className="w-full justify-center items-center absolute bottom-12 left-0 hidden lg:flex">
+          <a
+            href="#aboutme"
+            aria-label="Ir a seccion sobre mí"
+            className="animate-bounce py-1 px-1 text-white bg-primary-3 hover:bg-primary-2 transition-all duration-300 items-center border-primary-2 border-2 rounded-full"
+          >
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="#ffffff"
+                d="m12 19.164l6.207-6.207l-1.414-1.414L12 16.336l-4.793-4.793l-1.414 1.414L12 19.164Zm0-5.65l6.207-6.207l-1.414-1.414L12 10.686L7.207 5.893L5.793 7.307L12 13.514Z"
+              ></path>
+            </svg>
+          </a>
+        </div>
       </section>
 
       {technologies.map((tech) => (
