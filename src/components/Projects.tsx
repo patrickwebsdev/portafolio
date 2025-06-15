@@ -9,7 +9,7 @@ const technologies = [
   "nextjs",
   "astro",
   "typescript",
-  "php",
+  "laravel",
   "tailwind",
   "bootstrap",
   "hotjar",
@@ -36,6 +36,22 @@ const Projects = () => {
             url="#contact"
           />
           <ProjectCard
+            video="projects/premiumteak.mp4"
+            image="projects/premiumteak"
+            title="PremiumTeak"
+            description="Venta de madera"
+            technologies={["nextjs", "typescript", "tailwind"]}
+            url="https://premiumteak.net"
+          />
+          <ProjectCard
+            video="projects/iniciospropiedades.mp4"
+            image="projects/iniciospropiedades"
+            title="Inicios Propiedades"
+            description="Venta de propiedades"
+            technologies={["laravel", "tailwind"]}
+            url="https://iniciosvirtual.ar"
+          />
+          <ProjectCard
             video="projects/miwa.mp4"
             image="projects/miwa"
             title="MIWA"
@@ -49,7 +65,7 @@ const Projects = () => {
             image="projects/edsu"
             title="EDSU"
             description="Venta de madera mayorista y productos de madera minorista"
-            technologies={["react", "nextjs", "tailwind", "typescript"]}
+            technologies={["nextjs", "tailwind", "typescript"]}
             url="https://edsu.net/"
             urlGit="https://github.com/patrickwebsdev/edsu/"
           />
@@ -70,15 +86,6 @@ const Projects = () => {
             technologies={["html", "css", "javascript", "sass"]}
             url="https://patrickwebsdev.github.io/shadow-generator/"
             urlGit="https://github.com/patrickwebsdev/shadow-generator/"
-          />
-          <ProjectCard
-            video="projects/biginfluence-template.mp4"
-            image="projects/biginfluence-template"
-            title="BigInfluence Template"
-            description="Plantilla para servicios de influencers"
-            technologies={["html", "css", "javascript", "sass"]}
-            url="https://patrickwebsdev.github.io/biginfluence/"
-            urlGit="https://github.com/patrickwebsdev/biginfluence/"
           />
         </div>
         <div className="w-full justify-center items-center absolute bottom-12 left-0 hidden lg:flex">
